@@ -1,17 +1,35 @@
 "use strict";
-// const msg:string = 'Hola Mundo'
-// const hero = {
-//     name:'Iron Man',
-//     age: 45
-// }
-// hero.age = 50
-// console.log(hero.age+1);
-// const a:number = 10;
-// let b:string;
-// function sayHello(msg:string){
-//     console.log(msg + '' + 'Eduardo');    
-// }
 (() => {
-    const a = 10;
-    console.log(a);
+    // Tipos
+    const batman = 'Bruce';
+    const superman = 'Clark';
+    const existe = false;
+    // Tuplas
+    const parejaHeroes = [batman, superman];
+    const villano = ['Lex Lutor', 5, true];
+    // Arreglos
+    const aliados = ['Mujer Maravilla', 'Acuaman', 'San', 'Flash'];
+    //Enumeraciones
+    let power;
+    (function (power) {
+        power[power["Acuaman"] = 0] = "Acuaman";
+        power[power["Batman"] = 1] = "Batman";
+        power[power["Flash"] = 5] = "Flash";
+        power[power["Superman"] = 100] = "Superman";
+    })(power || (power = {}));
+    const fuerzaFlash = power.Flash;
+    const fuerzaSuperman = power.Superman;
+    const fuerzaBatman = power.Batman;
+    const fuerzaAcuaman = power.Acuaman;
+    // Retorno de funciones
+    function activar_batiseñal() {
+        return 'activada';
+    }
+    function pedir_ayuda() {
+        console.log('Auxilio!!!');
+    }
+    // Aserciones de Tipo
+    const poder = '100';
+    const largoDelPoder = poder.length;
+    console.log(largoDelPoder);
 })();

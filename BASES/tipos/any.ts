@@ -16,8 +16,5 @@
 
     console.log(power);
     
-    
-    
-    
 
 })()
